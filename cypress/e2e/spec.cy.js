@@ -4,6 +4,6 @@ describe('Mission check parrot img', () => {
     //test url
     cy.url().should('include','udm=2')
     //get first parrot pic
-    cy.get('img[alt*="parrot"]').first().click()
+    cy.get('img[alt*=/parrot/i]').first().click()
   })
 })
